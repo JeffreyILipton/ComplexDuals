@@ -47,7 +47,7 @@ class ACDual:
     __rmul__ = __mul__
     
     def mag(self):
-        return np.sqrt(self.real*self.real.conjugate())
+        return sqrt(self.real*self.real.conjugate())
     
     def __matmul__(self,other):
         return self*other*self.involution()
